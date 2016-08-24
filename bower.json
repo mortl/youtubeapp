@@ -1,0 +1,29 @@
+{
+  "name": "Youtube App",
+  "authors": [
+    "mortl <martin.benes66@gmail.com>"
+  ],
+  "description": "Youtube app to show personal playlists.",
+  "main": "js/app.js",
+  "keywords": [
+    "angularjs",
+    "bootstrap",
+    "css"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8"
+  }
+}

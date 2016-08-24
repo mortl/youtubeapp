@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="youtubeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <script src="bower_components/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/controllers/home.controller.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/controllers/about.controller.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/controllers/list.controller.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/directives/home.directive.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/services/apikey.service.js" type="text/javascript" charset="utf-8"></script>
+    <title>Youtube Playlist App</title>
+</head>
+
+<body ng-cloak>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#/">Youtube Playlist Viewer</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#/list"><i class="fa fa-fighter-jet"></i>List</a></li>
+                    <li><a href="#/about"><i class="fa fa-ra"></i>About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+</body>
+
+</html>
